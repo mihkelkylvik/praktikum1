@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coffee</title>
+<link href="style.css" type="text/css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript">
+	window.onload = function() {
+		$(function() {
+		 var pgurl = window.location.href.substr(window.location.href
+		.lastIndexOf("/")+1);
+			 $("#menu ul li a").each(function(){
+				  if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+				  $(this).addClass("active");
+			 })
+		});
+	}
+</script>   
+</head>
+<body>
+	<div id="header-bg">
+	<div id="header">
+		<div id="logo">
+			<h2>La Cafe Parisien.</h2>
+			<h3>A little cafeteria in Hoxton, London</h3>
+		</div>
+		<div id="lang-bar">
+			<ul>
+			<li><a href="index.html">ENG</a></li>
+			<li><a href="aboutus.html">FRA</a></li>
+			<li><a href="services.html">ITA</a></li>
+			</ul>
+		</div>
+		<form method="get" action="#"> 		
+			<input type="text" name="zoom_query"> 					
+			<input type="submit" value="">
+		</form>
+
+	
+		<div id="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div id="main">
+	
+		<div class="img-container">
+			<h1>This is my <br> very first <br> blog post</h1>
+			<img src="images/post-1.jpg" width="220" height="300">
+			<p>March 21, 2014</p>
+		</div>
+		<div class="img-container">
+		<h1>How I <br> wrote my <br> first article</h1>
+			<img src="images/post-2.jpg" width="220" height="300">
+			<p>June 27, 2014</p>
+		</div>
+		<div class="img-container">
+		<h1>10 best <br> ways to <br> write a blog <br> post</h1>
+			<img src="images/post-3.jpg" width="220" height="300">
+			<p>May 27, 2014</p>
+		</div>
+		<div class="img-container">
+		<h1>Having <br> sample <br> news <br> pieces?</h1>
+			<img src="images/post-4.jpg" width="220" height="300">
+			<p>April 25, 2014</p>
+		</div>
+		<div id="main-text">
+			<h1>A better way to create a website</h1>
+			<p>Introduce your company (or yourself) here. Click around, try out how to edit text, choose a different design theme, upload </p>
+			<p>pictures etc. This site is fully customizable - you can add, delete, modify any text or pictures as you desire.</p>
+		</div>
+	</div>
+	<footer>
+		<div id="left-contact"><p>© My Company 2012. Visit us at 1192 Cambridge Street, Cambridge, MA 02139<br>Call us +1 617-576-1950  Email us at email@yourname.com</p></div>
+		<div id="right-info"><p>Create multilingual<br>websites with Edicy</p></div>
+	</footer>
+</body>
+</html>
